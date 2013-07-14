@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/header_layout_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal"
+        >
+
+        <ImageButton
+            android:id="@+id/header_img_wifi"
+            android:layout_marginTop="5dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/bt_wifi_bg" />
+
+        <ImageView
+            android:layout_marginTop="15dip"
+            android:id="@+id/header_img_left_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header_left_bg" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/text_title"
+        style="@style/title_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dip"
+        android:layout_marginLeft="10dip"
+        android:layout_below="@+id/header_layout_left"
+        android:background="@drawable/title_bg"
+        android:text="应用  Software" />
+
+    <LinearLayout
+        android:id="@+id/header_layout_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/header_layout_right"
+        android:layout_toRightOf="@+id/header_layout_left"
+        android:orientation="horizontal"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip" >
+
+        <RelativeLayout
+            android:id="@+id/header_layout_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dip" >
+
+            <Button
+                android:id="@+id/btn_item_one"
+                style="@style/header_title_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="3dip"
+                android:drawableTop="@drawable/bt_home_bg"
+                android:gravity="center_horizontal"
+                android:text="主页 Home" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+             android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip" >
+
+            <Button
+                android:id="@+id/btn_item_two"
+                style="@style/header_title_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="3dip"
+                android:drawableTop="@drawable/bt_app_bg"
+                android:gravity="center_horizontal"
+                android:text="应用 Software" />
+        </RelativeLayout>
+
+        <RelativeLayout
+             android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip" >
+
+            <Button
+                android:id="@+id/btn_item_three"
+                style="@style/header_title_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="3dip"
+                android:drawableTop="@drawable/bt_game_bg"
+                android:gravity="center_horizontal"
+                android:text="游戏 Game" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/header_layout_search"
+            android:layout_width="wrap_content"
+             android:layout_weight="1"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btn_item_four"
+                style="@style/header_title_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="3dip"
+                android:drawableTop="@drawable/bt_search_bg"
+                android:gravity="center_horizontal"
+                android:text="搜索 Search" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/header_layout_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingTop="10dip" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/header_right_bg" />
+    </LinearLayout>
+
+    <com.telecomexperience.ui.MyLineView
+        android:id="@+id/header_view_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/header_layout_center"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>
